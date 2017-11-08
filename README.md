@@ -5,6 +5,12 @@ This is a lightweight python package designed to ease a bit more the use of `eve
 
 Actually helping structuring eve endpoint(s) into an auto built domain and with all in one place.
 
+### Installation
+
+```bash
+pip install evedom
+```
+
 ### Settings.py
 
 ```python
@@ -19,7 +25,7 @@ DOMAIN = loader.domain(root=path.dirname(__file__), folder='endpoints')
 ### Endpoint
 
 Based on above settings, Endpoint(s) shall be set into
-`'{}/endpoints'.format(path.dirname(__file__))`.
+`'root/endpoints'` where root = path.dirname(\__file__).
 
 ```
 root/
@@ -30,7 +36,7 @@ root/
 ```
 
 See below example to create an endpoint,
-More example can be found in the `evedom_demo` project.
+More example can be found in the [evedom demo](https://github.com/nam4dev/evedom_demo) project.
 
 ```python
 from evedom import Endpoint
